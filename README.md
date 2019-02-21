@@ -1,3 +1,5 @@
+Покадровый прогон видео на распознавание номеров. Находим bboxes с помощью Mask-RCNN, затем распознаем текст в найденных прямоугольниках с помощью Tesseract OCR
+
 ## Скачивание необходимых компонентов
 
 - устанавливаем ```tesseract 4.xx``` [(build from source)](https://github.com/tesseract-ocr/tesseract/wiki/Compiling)
@@ -6,7 +8,7 @@
 - тестовые видео скачиваем [здесь](https://drive.google.com/open?id=1gq14wGn3rotADueRI10ObOH1ZFEbsW5b) и кладем в *Data/video_results/preprocessed*
 
 ## Запуск
-В скрипте ```run_detect.py``` в словаре выбираем видео, для которых хотим запустить распознавание
+В ```run_detect.py``` выбираем видео, для которых хотим запустить распознавание:
 ```python
 videos = {
 # 'IMG_7460.MOV': IMG_7460,
@@ -26,6 +28,6 @@ videos = {
 }
 ```
 
-Далее выполняем
+Далее запускаем
 
-```python run_detector.py```
+```$(virtual_env) python run_detector.py```

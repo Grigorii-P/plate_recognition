@@ -9,3 +9,7 @@ cofig/*.json
 test/*
 public/npdetect.php
 Mask_RCNN
+Data/video_results/preprocessed/*
+Data/video_results/result/*
+Data/models/*
+logs/*
